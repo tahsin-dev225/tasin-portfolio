@@ -87,7 +87,7 @@ const Work = () => {
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-4">
               <h2 className="text-2xl font-semibold text-white mb-4">{work?.name}</h2>
-              <div className="grid grid-cols-2 gap-3">
+              {/* <div className="grid grid-cols-2 gap-3">
                 {work?.language.map((lang) => (
                   <div
                     className="px-3 py-1.5 flex justify-center items-center bg-white/10 text-white cursor-pointer rounded-lg border border-white/30 hover:bg-white/20 transition"
@@ -96,7 +96,7 @@ const Work = () => {
                     {lang}
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </a>
         ))}
