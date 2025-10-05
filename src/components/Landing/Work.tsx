@@ -1,135 +1,113 @@
 "use client";
 
-import Image from "next/image";
-import UseAnimationFrame from "../AnimateComponent/AnimationBox";
-import Ribbons from "../AnimateComponent/AnimatedCursor";
-import ChromaGrid from "../AnimateComponent/AnimatedCromaCard";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
+import { IoEarthSharp } from "react-icons/io5";
+type WorksType ={
+  name : string;
+  language : string[];
+  url : string;
+  img : string;
+  github : string;
+}
 
-
-const items = [
+const works : WorksType[] = [
   {
-    image: "/img/shoply.png",
-    title: "Sarah Johnson",
-    subtitle: "Frontend Developer",
-    handle: "@sarahjohnson",
-    borderColor: "#3B82F6",
-    gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://shoply-client.vercel.app/"
-  },
-  {
-    image: "/img/work-learnetic.png",
-    title: "Mike Chen",
-    subtitle: "Backend Engineer",
-    handle: "@mikechen",
-    borderColor: "#10B981",
-    gradient: "linear-gradient(180deg, #10B981, #000)",
-    url: "https://learn-management-frontend.vercel.app"
-  }
-];
-
-const works = [
-  {
-    name: "Learning Management website.",
+    name: "Shoply - E-commerce website.",
     language: ["React", "next.js", "typeScript"],
     url: "https://learn-management-frontend.vercel.app",
-    img: "/img/shoply.png",
+    img: "/img/shoplyFull.png",// "/img/work-shoply2.png", "/img/shoply3.png",
+    github : "https://github.com/sabbir53rahman/Shoply_client"
   },
   {
     name: "Learning Management website.",
     language: ["React", "next.js", "typeScript"],
     url: "https://learn-management-frontend.vercel.app",
-    img: "/img/work-learnetic.png",
+    img: "/img/learneticFull.png",
+    github : ""
   },
   {
     name: "Learning Management website.",
     language: ["React", "next.js", "typeScript"],
     url: "https://learn-management-frontend.vercel.app",
-    img: "/img/buildingmanagement.png",
+    img: "/img/buildingFull.png",
+    github : ""
+  },
+  {
+    name: "Coco-Combat - Random Figma Design.",
+    language: ["React", "next.js", "typeScript"],
+    url: "https://coco-tsx.vercel.app/",
+    img: "/img/coco.png",
+    github : ""
   },
   {
     name: "Learning Management website.",
     language: ["React", "next.js", "typeScript"],
     url: "https://learn-management-frontend.vercel.app",
     img: "/img/work-chronic.png",
+    github : ""
   },
   {
     name: "Learning Management website.",
     language: ["React", "next.js", "typeScript"],
     url: "https://learn-management-frontend.vercel.app",
     img: "/img/work-inventory.png",
+    github : ""
   },
 ];
 
 const Work = () => {
   return (
-    <div className="w-[100%] relative py-8 mx-auto">
-      <h1 className=""></h1>
+    <section id="work" className="w-[100%]  relative py-20 mx-auto">
+      <h1 className="text-center mx-auto mb-6 text-xl font text-gray-200 sm:text-2xl md:text-3xl lg:text-4xl font-semibold">My Works & web-Design.</h1>
+      <p className="text-center mx-auto w-[90%] font-sans tracking-tigh text-sm mb-8 md:mb-20! lg:mb-20 sm:w-[90%] md:w-[70%] lg:w-[60%] xl:w-[45%]  text-gray-400">
+        Here are some of the projects and designs {"I’ve"} crafted with passion — blending clean code, modern UI, and creative ideas.
+      </p>
       <div className="flex gap-5">
-        <button className="">All work</button>
+        {/* <button className="">All work</button> */}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {works?.map((work, idx) => (
-          <a
-            href={work?.url}
-            target="_blank"
-            className="relative group w-full overflow-hidden rounded-xl shadow-lg"
-            key={idx}
-          >
-            {/* Image */}
-            <Image
-              src={work?.img}
-              height={500}
-              width={700}
-              alt="work"
-              className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
-            />
-
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-4">
-              <h2 className="text-2xl font-semibold text-white mb-4">{work?.name}</h2>
-              {/* <div className="grid grid-cols-2 gap-3">
-                {work?.language.map((lang) => (
-                  <div
-                    className="px-3 py-1.5 flex justify-center items-center bg-white/10 text-white cursor-pointer rounded-lg border border-white/30 hover:bg-white/20 transition"
-                    key={lang}
-                  >
-                    {lang}
-                  </div>
-                ))}
-              </div> */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-[98%] mx-auto gap-3 lg:gap-y-14 md:gap-8">
+        {works?.map((work, idx) => (<div className="w-full border border-sky-300/50 border-b-fuchsia-300/60 text-[#ece4e4] shadow-lg shadow-sky-900/10 rounded-[16px] bg-gradient-to-br from-zinc-950 via-zinc-950/80 to-transparent backdrop-blur-sm h-[100%]" key={idx}>
+        
+              <div className="relative p-3  group w-full h-[250px] rounded-t-2xl rounded-b overflow-hidden  shadow-lg
+                  bg-top hover:bg-bottom transition-[background-position] duration-[6500ms] ease-linear"
+                style={{
+                  backgroundImage: `url(${work?.img})`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }}
+              >
+                
+              </div>
+            <div className="p-2.5 md:p-4 bg-gradient-to-t  rounded-b-3xl from-zinc-95 via-zinc-950/8 to-transparent">
+              <h3 className="sm:text-lg md:text-xl flex flex-col  flex-1 lg:text-2xl line-clamp-2 ">{work?.name}</h3>
+              <div className="flex justify-e gap-2 sm:gap-3 md:gap-4 lg:gap-6 items-center mt-5 mb-3">
+                <Link
+                  href={work?.github}
+                  target="_blank"
+                  className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-zinc-900/80 px-4 py-3 text-sm font-medium
+                   text-white ring-1 ring-white/10 backdrop-blur-sm transition-all duration-300 hover:bg-zinc-800 hover:ring-white/20
+                    hover:scale-[1.02]">
+                  <FaGithub className="text-lg group-hover:rotate-6 transition-transform duration-300" />
+                  Code
+                </Link>
+                <Link
+                  href={work?.url}
+                  target="_blank"
+                  className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600/50 to-purple-600/50 px-4 py-3
+                   text-sm font-medium text-white shadow-lg shadow-blue-500/20 transition-all duration-300 hover:from-blue-500/60
+                    hover:to-purple-500/60 hover:shadow-xl hover:shadow-blue-500/10 hover:scale-[1.02]">
+                  <IoEarthSharp className="text-lg group-hover:rotate-6 transition-transform duration-300" />
+                  Website
+                </Link>
+              </div>
             </div>
-          </a>
+          </div>
+          
         ))}
       </div>
 
-      
-
-<div className="relative py-5">
-  <ChromaGrid
-    items={items}
-    radius={400}
-    damping={0.45}
-    fadeOut={0.2}
-    ease="power3.out"
-  />
-</div>
-
-
-      {/* <div className="w-full top-0  absolute overflow-hidden">
-        <div className="relative h-[500px] overflow-hidden " >
-          <Ribbons
-            baseThickness={20}
-            colors={["#505add"]}
-            speedMultiplier={0.5}
-            maxAge={500}
-            enableFade={false}
-            enableShaderEffect={true}
-          >
-          </Ribbons>
-        </div>
-      </div>   */}
-      
-    </div>
+    </section>
   );
 };
 

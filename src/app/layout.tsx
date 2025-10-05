@@ -1,6 +1,16 @@
+import '@ant-design/v5-patch-for-react-19';
+import 'antd/dist/reset.css';
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Bitter } from "next/font/google";
 import "./globals.css";
+import SmoothScroll from "@/components/Ui/SmothScroll";
+
+
+const bitter = Bitter({
+  variable: "--font-bitter",
+  subsets: ["latin"],
+  weight: ["400", "500", "700"], // যেসব weight দরকার
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,10 +34,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} ${bitter.variable} antialiased`} >
+        <SmoothScroll>
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   );
