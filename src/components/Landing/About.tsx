@@ -1,13 +1,14 @@
 "use client";
 import Image from "next/image";
 import SplitText from "../AnimateComponent/SpliteText";
-import TextCursor from "../AnimateComponent/TextCursor";
 
 export default function AboutMe() {
   return (
-    <section id="about" className="relative bg-gradient-to-t font- from-gray-950/10 to-gray-900/20 my-6 sm:my-14 text-gray-200 pt-6 md:pt-8 lg:pt-12 xl:pt-20 p-4 ">
+    <section
+      id="about"
+      className="relative bg-gradient-to-t font- from-gray-950/10 to-gray-900/20 my-6 sm:my-14 text-gray-200 pt-6 md:pt-8 lg:pt-12 xl:pt-20 p-4 "
+    >
       <div className="max-w-6x mx-auto  flex justify-center flex-col-reverse md:flex-row gap-10 items-center">
-        
         {/* Image */}
         <div className="relative w-full group mx-auto">
           <div className="absolute -inset-1 bg-gradient-to-r from-purple-600/5 to-indigo-600/5 rounded-2xl blur opacity-40 group-hover:opacity-60 transition duration-500"></div>
@@ -51,15 +52,22 @@ export default function AboutMe() {
             className="text-[14px] md:text-[15px] leading-6 font-thin tracking-widest font-sans"
           />
 
-
-          <p className="text-lg font- leading-relaxed text-gray-300 mb-6">
-            
-          </p>
-          <p className="text- font- leading-relaxed text-gray-400 mb-6">
-            When I’m not coding, I enjoy exploring new technologies, learning advanced 
-            design patterns, and contributing to open-source projects. My goal is to 
-            create impactful digital  solutions that make life easier for people.
-          </p>
+          <SplitText
+            text={`When I’m not coding, I enjoy exploring new technologies, learning
+            advanced design patterns, and contributing to open-source projects.
+            My goal is to create impactful digital solutions that make life
+            easier for people.`}
+            delay={10}
+            duration={0.5}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.3}
+            rootMargin="-100px"
+            textAlign="left"
+            className="text-[14px] md:text-[15px] leading-6 font-thin tracking-widest mb-6 font-sans"
+          />
           <a
             href="#contact"
             className="inline-block  cursor-pointer px-6 py-3 bg-purple-600 text-white font-medium rounded-lg shadow-lg hover:bg-purple-700 transition"
@@ -71,16 +79,7 @@ export default function AboutMe() {
 
       {/* <div className="w-full top-0 h-full z-10 absolute overflow-hidden">
          <div className="relative h-full overflow-hidden " >
-          <TextCursor
-            text="⚛️ "
-            delay={0.01}
-            spacing={180}
-            followMouseDirection={true}
-            randomFloat={true}
-            exitDuration={0.4}
-            removalInterval={20}
-            maxPoints={90}
-          />
+          
          </div>
        </div>  */}
     </section>
