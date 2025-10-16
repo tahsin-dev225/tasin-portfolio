@@ -10,11 +10,11 @@ export default function SmoothScroll({
 }) {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 0.7, // how long it takes to reach target
+      duration: 3, // how long it takes to reach target
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       gestureOrientation: "vertical",
       touchMultiplier: 1.5,
-      lerp: 0.4, // faster but still smooth
+      lerp: 12, // faster but still smooth
     });
 
     function raf(time: number) {

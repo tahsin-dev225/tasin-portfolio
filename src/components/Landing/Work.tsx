@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { IoEarthSharp } from "react-icons/io5";
+import SectionHeader from "../shared/SectionHeader";
 type WorksType ={
   name : string;
   language : string[];
@@ -58,14 +59,11 @@ const works : WorksType[] = [
 
 const Work = () => {
   return (
-    <section id="work" className="w-[100%]  relative py-20 mx-auto">
-      <h1 className="text-center mx-auto mb-6 text-xl font text-gray-200 sm:text-2xl md:text-3xl lg:text-4xl font-semibold">My Works & web-Design.</h1>
-      <p className="text-center mx-auto w-[90%] font-sans tracking-tigh text-sm mb-8 md:mb-20! lg:mb-20 sm:w-[90%] md:w-[70%] lg:w-[60%] xl:w-[45%]  text-gray-400">
-        Here are some of the projects and designs {"I’ve"} crafted with passion — blending clean code, modern UI, and creative ideas.
-      </p>
-      <div className="flex gap-5">
-        {/* <button className="">All work</button> */}
-      </div>
+    <section id="work" className="w-[100%] px-3 md:px-5 lg:px-0 relative pb-6 md:pb-10  pt-6 mx-auto">
+      <SectionHeader title="My Works & web-Design." 
+        subtitle="Here are some of the projects and designs I’ve crafted with passion — blending clean code, modern UI, and creative ideas."
+      />
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-[98%] mx-auto gap-3 lg:gap-y-14 md:gap-8">
         {works?.map((work, idx) => (<div className="w-full border border-sky-300/50 border-b-fuchsia-300/60 text-[#ece4e4] shadow-lg shadow-sky-900/10 rounded-[16px] bg-gradient-to-br from-zinc-950 via-zinc-950/80 to-transparent backdrop-blur-sm h-[100%]" key={idx}>
         
@@ -80,7 +78,7 @@ const Work = () => {
                 
               </div>
             <div className="p-2.5 md:p-4 bg-gradient-to-t  rounded-b-3xl from-zinc-95 via-zinc-950/8 to-transparent">
-              <h3 className="sm:text-lg md:text-xl flex flex-col  flex-1 lg:text-2xl line-clamp-2 ">{work?.name}</h3>
+              <h3 className="sm:text-lg md:text-lg flex flex-col  flex-1 lg:text-xl line-clamp-2 ">{work?.name}</h3>
               <div className="flex justify-e gap-2 sm:gap-3 md:gap-4 lg:gap-6 items-center mt-5 mb-3">
                 <Link
                   href={work?.github}

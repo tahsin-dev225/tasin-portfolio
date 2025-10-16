@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsInstagram } from "react-icons/bs";
 import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa6";
 
 interface INav {
@@ -66,14 +66,14 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-white mb-4">Connect</h3>
           <div className="flex gap-5">
-            <a href="https://github.com/" target="_blank" className="hover:text-white">
+            <a href="https://github.com/tahsin-dev225" target="_blank" className="hover:text-white">
               <BsGithub className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com/" target="_blank" className="hover:text-white">
+            <a href="https://www.linkedin.com/in/tasin57" target="_blank" className="hover:text-white">
               <FaLinkedin className="w-6 h-6" />
             </a>
-            <a href="https://twitter.com/" target="_blank" className="hover:text-white">
-              <FaTwitter className="w-6 h-6" />
+            <a href="https://www.instagram.com/tasin5758/" target="_blank" className="hover:text-white">
+              <BsInstagram className="w-6 h-6" />
             </a>
             <a href="https://www.facebook.com/md.tasin.102750" target="_blank" className="hover:text-white">
               <FaFacebook className="w-6 h-6" />

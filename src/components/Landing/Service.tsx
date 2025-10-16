@@ -81,6 +81,7 @@
 
 import { Code2, Database, Lock, CreditCard, Layout, Cloud } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import SectionHeader from "../shared/SectionHeader";
 
 export default function Services() {
   const [isVisible, setIsVisible] = useState(false);
@@ -153,55 +154,54 @@ export default function Services() {
   }, []);
 
   return (
-    <section id="service" ref={sectionRef} className="py-24 relative overflow-hidden">
+    <section id="service" ref={sectionRef} className="py-8 md:py-12  xl:py-20 relative overflow-hidden">
       {/* Background gradients */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <h2 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
-            My Services
-          </h2>
-          <p className="text-muted-foreground font-sans text max-w-2xl mx-auto">
-            Transforming ideas into powerful digital experiences that help brands grow, engage audiences, and build meaningful project.
-          </p>
+          
+          <SectionHeader title="My Services" 
+          subtitle="Transforming ideas into powerful digital experiences that help brands grow, engage audiences, and build meaningful project."
+          // className={`isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"`}
+          />
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, idx) => (
             <div
               key={idx}
-              className={`group relative transition-all duration-700 ${
+              className={`group relative transition-all duration-700  ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
               }`}
               style={{
                 transitionDelay: `${idx * 100}ms`,
               }}
-            >
+              >
               {/* Glow effect on hover */}
               <div className={`absolute -inset-0.5 bg-gradient-to-r ${service.color} rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition duration-500`} />
               
-              {/* Card */}
-              <div className="relative h-full p-8 rounded-2xl hover:rounded-b-non bg-card/50 backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 hover:-translate-y-2">
-                {/* Icon container with gradient */}
-                <div className={`mb-6 inline-flex p-4 rounded-xl bg-gradient-to-br ${service.color} shadow-lg ${service.shadowColor} group-hover:shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:rotate-3`}>
-                  <div className="text-white">
-                    {service.icon}
+                {/* Card */}
+                <div className="relative h-full p-8 rounded-2xl hover:rounded-b-non bg-card/50 border bg-sky-500/5 backdrop-blur-2xl border-indigo-400/20 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2">
+                  {/* Icon container with gradient */}
+                  <div className={`mb-6 inline-flex p-4 rounded-xl bg-gradient-to-br ${service.color} shadow-lg ${service.shadowColor} group-hover:shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:rotate-3`}>
+                    <div className="text-white">
+                      {service.icon}
+                    </div>
                   </div>
+
+                  <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors duration-300">
+                    {service.title}
+                  </h3>
+                  
+                  <p className="text-muted-foreground leading-relaxed">
+                    {service.desc}
+                  </p>
+
+                  {/* Decorative bottom border */}
+                  <div className={`absolute bottom-1 left-0 h-1 w-0 bg-gradient-to-r ${service.color} group-hover:w-[99%] translate-1 transition-all duration-500 rounded-full`} />
                 </div>
-
-                <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors duration-300">
-                  {service.title}
-                </h3>
-                
-                <p className="text-muted-foreground leading-relaxed">
-                  {service.desc}
-                </p>
-
-                {/* Decorative bottom border */}
-                <div className={`absolute bottom-1 left-0 h-1 w-0 bg-gradient-to-r ${service.color} group-hover:w-[99%] translate-1 transition-all duration-500 rounded-full`} />
-              </div>
             </div>
           ))}
         </div>

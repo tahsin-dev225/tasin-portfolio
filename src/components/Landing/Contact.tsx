@@ -6,6 +6,8 @@ import { BsGithub } from "react-icons/bs";
 import { FaFacebookF, FaLinkedin } from "react-icons/fa6";
 import { toast, ToastContainer } from "react-toastify";
 import { FaFacebook } from "react-icons/fa";
+import Ribbons from "../AnimateComponent/AnimatedCursor";
+import SectionHeader from "../shared/SectionHeader";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
@@ -38,37 +40,36 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-16 text-gray-200" id="contact">
+    <section className="py-7 md:py-10 mb-2 md:mb-8  xl:py-16 relative font-sans text-gray-200" id="contact">
       <ToastContainer />
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-center text-3xl md:text-5xl font-bold mb-4">
-          Get In Touch
-        </h2>
-        <p className="text-center text-gray-400 font-sans mb-12! max-w-2xl lg:w-[50%] mx-auto">
-          I’m always open to discussing new projects, creative ideas, or
-          opportunities to be part of your visions.
-        </p>
+        <SectionHeader title="Get In Touch"
+         subtitle="I’m always open to discussing new projects, creative ideas, or opportunities to be part of your visions."/>
 
         <div className="grid sm:grid-cols-2 gap-10 items-center">
           {/* Contact info */}
-          <div className="space-y-6">
-            <div className="flex items-center gap-4">
-              <Mail className="w-6 h-6 text-blue-500" />
-              <span className="text-gray-300">
-                ahmedtasin225@email.com
-              </span>
+          <div className="flex flex-col justify-between px-3 h-full lg:h-[84%] mt-auto">
+            <div className="space-y-6 z-20">
+
+            
+              <div className="flex items-center gap-4">
+                <Mail className="w-6 h-6 text-blue-500" />
+                <span className="text-gray-300">
+                  ahmedtasin225@email.com
+                </span>
+              </div>
+              <div className="flex items-center gap-4">
+                <Phone className="w-6 h-6 text-green-600" />
+                <span className="text-gray-300">+880 01331224641</span>
+              </div>
+              <div className="flex items-center gap-4">
+                <MapPin className="w-6 h-6 text-red-800" />
+                <span className="text-gray-300">
+                  Kuchiamora, Munshigonj, Dhaka, Bangladesh
+                </span>
+              </div>
             </div>
-            <div className="flex items-center gap-4">
-              <Phone className="w-6 h-6 text-green-600" />
-              <span className="text-gray-300">+880 01331224641</span>
-            </div>
-            <div className="flex items-center gap-4">
-              <MapPin className="w-6 h-6 text-red-800" />
-              <span className="text-gray-300">
-                Kuchiamora, Munshigonj, Dhaka, Bangladesh
-              </span>
-            </div>
-            <div className="">
+            <div className="shadow-2xl py-4 px-2.5 shadow-sky-400/5 z-20">
                 <div className=" border-b border-gray-600 w-[80%]"></div>
 
               <h3 className="text-sm sm:text-lg mt-2! font-medium bg-gradient-to-r from-indigo-400 via-pink-500 to-orange-400 bg-clip-text text-transparent">
@@ -88,14 +89,14 @@ export default function Contact() {
                   target="_blank"
                   className="hover:text-white"
                 >
-                  <FaLinkedin className="w-6 h-6 text-gray-400 hover:text-white transition" />
+                  <FaLinkedin className="w-6 h-6 text-blue-800 bg-white  transition" />
                 </a>
                 <a
                   href="https://www.facebook.com/md.tasin.102750"
                   target="_blank"
-                  className="hover:text-white"
+                  className=""
                 >
-                  <FaFacebook className="text-[26px] border border-blue-700 shadow-blue-950 shadow bg-white rounded-full text-blue-700 hover:text-white transition" />
+                  <FaFacebook className="text-[26px] border border-blue-700 shadow-blue-950 shadow bg-white rounded-full text-blue-700 transition" />
                 </a>
               </div>
             </div>
@@ -105,7 +106,7 @@ export default function Contact() {
           {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
-            className="space-y-6 bg-[#14141f] p-6 rounded-xl shadow-lg border border-gray-800"
+            className="space-y-6 z-20 bg-[#14141f] p-6 rounded-xl shadow-lg border border-gray-800"
           >
             <div>
               <label className="block text-sm mb-2 text-gray-400">Email</label>
@@ -134,7 +135,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-3 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold hover:opacity-90 transition"
+              className="w-full py-3 cursor-pointer rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold hover:opacity-90 transition"
             >
               {loading ? "Sending..." : "Send Message"}
             </button>
@@ -145,6 +146,19 @@ export default function Contact() {
           </form>
         </div>
       </div>
+      {/* <div className="w-full top-0 h-full z-10 absolute overflow-hidden">
+         <div className="relative h-full overflow-hidden " >
+           <Ribbons
+             baseThickness={20}
+             colors={["#505add"]}
+             speedMultiplier={0.5}
+             maxAge={550}
+             enableFade={false}
+             enableShaderEffect={true}
+           >
+           </Ribbons>
+         </div>
+       </div>  */}
     </section>
   );
 }

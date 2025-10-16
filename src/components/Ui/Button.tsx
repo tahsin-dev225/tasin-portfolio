@@ -27,20 +27,10 @@ const navItems: INav[] = [
   { title: "Home", href: "/" },
   { title: "Work", href: "/work" },
   { title: "About", href: "/about" },
-  {
-    title: "Projects",
-    href: "/projects",
-    subItems: [
-      { title: "Web Apps", href: "/projects/web" },
-      { title: "Mobile Apps", href: "/projects/mobile" },
-      { title: "UI/UX Designs", href: "/projects/uiux" },
-    ],
-  },
 ];
 
 export default function Navbar2() {
   const [open, setOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
     <nav className="bg-black/70 backdrop-blur-md border-b border-white/10 fixed w-full top-0 left-0 z-50">
@@ -50,54 +40,7 @@ export default function Navbar2() {
           Tas<span className="text-indigo-500">in</span>
         </Link>
 
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-8 text-gray-300">
-          {navItems.map((item) => (
-            <li key={item.title} className="relative group">
-              {!item.subItems ? (
-                <Link
-                  href={item.href}
-                  className="hover:text-indigo-400 transition-colors duration-300"
-                >
-                  {item.title}
-                </Link>
-              ) : (
-                <>
-                  {/* Dropdown Button */}
-                  <button
-                    onMouseEnter={() => setDropdownOpen(true)}
-                    onMouseLeave={() => setDropdownOpen(false)}
-                    className="flex items-center gap-1 hover:text-indigo-400 transition-colors duration-300"
-                  >
-                    {item.title}
-                    <ChevronDown className="w-4 h-4 mt-[1px]" />
-                  </button>
-
-                  {/* Dropdown Menu */}
-                  <div
-                    onMouseEnter={() => setDropdownOpen(true)}
-                    onMouseLeave={() => setDropdownOpen(false)}
-                    className={`absolute left-0 mt-3 w-44 bg-[#111] rounded-xl border border-white/10 shadow-xl overflow-hidden transition-all duration-300 ${
-                      dropdownOpen
-                        ? "opacity-100 visible translate-y-0"
-                        : "opacity-0 invisible -translate-y-2"
-                    }`}
-                  >
-                    {item.subItems.map((sub) => (
-                      <Link
-                        key={sub.title}
-                        href={sub.href}
-                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-indigo-500/10 hover:text-indigo-400 transition-colors duration-200"
-                      >
-                        {sub.title}
-                      </Link>
-                    ))}
-                  </div>
-                </>
-              )}
-            </li>
-          ))}
-        </ul>
+        
 
         {/* Mobile Menu Button */}
         <button

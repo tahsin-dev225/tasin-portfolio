@@ -10,10 +10,12 @@ interface INav {
 }
 
 const navItems: INav[] = [
-  { title: "home", href: "/" },
+  { title: "home", href: "#home" },
   { title: "Work", href: "#work" },
   { title: "About", href: "#about" },
   { title: "Projects", href: "#projects" },
+  { title: "Service", href: "#service" },
+  { title: "Contact", href: "#contact" },
 ];
 
 const Navbar = () => {
@@ -56,7 +58,7 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center px-3 sm:px-5 md:px-10 py-3 md:py-5">
       {/* logo */}
-      <div>
+      <Link href={'#home'}>
         <Image
           src="/img/sign-tran.png"
           className="max-w-[60px] xsm:max-w-[70px] smm:max-w-[80px] md:w-[120px] rounded-[6px]"
@@ -64,7 +66,7 @@ const Navbar = () => {
           width={220}
           alt="logo"
         />
-      </div>
+      </Link>
 
       {/* desktop nav */}
       <div className="hidden md:flex gap-10 text-sm uppercase font-semibold">

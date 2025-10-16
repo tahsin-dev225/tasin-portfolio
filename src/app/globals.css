@@ -20,6 +20,11 @@
 
 }
 
+
+
+
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #040D1C;
@@ -107,8 +112,7 @@ html body{
 }
 
 .primary-button:hover{
-  background-color: #411c99; 
-  background-image: none;
+  background-image: linear-gradient(to bottom right, #9d2ef3, #0b55a5); 
 }
 
 /* for falling text bg color */
@@ -130,7 +134,4 @@ html body{
 .falling-pill:nth-child(4n) {
   background: linear-gradient(135deg, #81c784, #66bb6a); /* green */
 }
-
-
-
 
