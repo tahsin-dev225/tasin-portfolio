@@ -50,7 +50,7 @@ const Navbar = () => {
       e.preventDefault();
       const section = document.querySelector(href);
       if (section instanceof HTMLElement) {
-        smoothScroll(section, 1500); 
+        smoothScroll(section, 1500);
       }
     }
   };
@@ -58,10 +58,10 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center px-3 sm:px-5 md:px-10 py-3 md:py-5">
       {/* logo */}
-      <Link href={'#home'}>
+      <Link href={"#home"}>
         <Image
           src="/img/sign-tran.png"
-          className="max-w-[60px] xsm:max-w-[70px] smm:max-w-[80px] md:w-[120px] rounded-[6px]"
+          className="max-w-[60px] xsm:max-w-[70px] smm:max-w-[80px] md:max-w-[100px]  3xl:max-w-[100px] rounded-[6px]"
           height={10}
           width={220}
           alt="logo"
@@ -75,7 +75,7 @@ const Navbar = () => {
             key={item.href}
             href={item.href}
             onClick={(e) => handleScroll(e, item.href)}
-            className="hover:text-gray-400 font-mono cursor-pointer transition-colors duration-300"
+            className="hover:text-gray-400 font-mono 3xl:text-xl cursor-pointer transition-colors duration-300"
           >
             {item.title}
           </Link>
@@ -109,7 +109,7 @@ const Navbar = () => {
         <Link
           href="#contact"
           onClick={(e) => handleScroll(e, "#contact")}
-          className="primary-button text-sm px-3 py-1.5 sm:py-2.5 sm:px-6 transition-all duration-300 hover:scale-[1.05]"
+          className="primary-button text-sm px-3 py-1.5 sm:py-2.5 sm:px-6 3xl:py-3.5 3xl:px-9 3xl:text-xl transition-all duration-300 hover:scale-[1.05]"
         >
           Lets Contact
         </Link>
