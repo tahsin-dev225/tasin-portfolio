@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsInstagram } from "react-icons/bs";
-import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa6";
+import { FaFacebook, FaLinkedin } from "react-icons/fa6";
 
 interface INav {
   title: string;

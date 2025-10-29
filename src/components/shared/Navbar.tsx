@@ -13,7 +13,7 @@ const navItems: INav[] = [
   { title: "home", href: "#home" },
   { title: "Work", href: "#work" },
   { title: "About", href: "#about" },
-  // { title: "Projects", href: "#projects" },
+  { title: "My Journey", href: "#journey" },
   { title: "Service", href: "#service" },
   { title: "Contact", href: "#contact" },
 ];
@@ -57,7 +57,6 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between items-center px-3 sm:px-5 md:px-10 py-3 md:py-5">
-      {/* logo */}
       <Link href={"#home"}>
         <Image
           src="/img/sign-tran.png"

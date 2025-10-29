@@ -9,7 +9,7 @@ interface ScrollStackItemProps {
   cardBg?: string;
 }
 
-export const ScrollStackItem: React.FC<ScrollStackItemProps> = ({
+export const ScrollStackItems: React.FC<ScrollStackItemProps> = ({
   children,
   bgImg = "/img/gradiant4.jpg",
   cardBg,
