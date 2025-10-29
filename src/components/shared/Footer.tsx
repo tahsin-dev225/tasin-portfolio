@@ -31,7 +31,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gradient-to-br from-[#23002d] to-[#04046a] text-gray-400 border-t border-gray-800">
+    <footer className="bg-gradient-to-br from-[#c633ef3d] to-[#5757f02b] text-gray-400 border-t border-gray-800">
       <div className=" mx-auto px-6 py-12 grid md:grid-cols-3 gap-10  lg:w-[86%]">
         {/* Brand / Intro */}
         <div>
