@@ -6,9 +6,9 @@ export default function AboutMe() {
   return (
     <section
       id="about"
-      className="relative bg-gradient-to-t font- from-gray-950/10 to-gray-900/20 my-6 sm:my-14 text-gray-200 pt-6 md:pt-8 lg:pt-12 xl:pt-20 p-4 "
+      className="relative my-6 sm:my-14 text-gray-200 pt-6 md:pt-8 lg:pt-12 xl:pt-20 p-4 "
     >
-      <div className="max-w-6x mx-auto  flex justify-center flex-col-reverse md:flex-row gap-10 items-center">
+      <div className="max-w-6x mx-auto rounded-2xl bg-gradient-to-t font- from-[#5c81ee06] to-[#808af403] flex justify-center flex-col-reverse md:flex-row gap-10 items-center">
         {/* Image */}
         <div className="relative w-full group mx-auto">
           <div className="absolute -inset-1 bg-gradient-to-r from-purple-600/5 to-indigo-600/5 rounded-2xl blur opacity-40 group-hover:opacity-60 transition duration-500"></div>
@@ -17,7 +17,7 @@ export default function AboutMe() {
             alt="Tasin Ahmed"
             width={500}
             height={500}
-            className="relative mx-auto py-1.5 rounded-2xl shadow-2xl object-cover"
+            className="relative mx-auto sm:mx-0 py-1.5 md:py-0 rounded-2xl md:rounded-r-none shadow-2xl object-cover"
           />
         </div>
 
@@ -64,7 +64,7 @@ export default function AboutMe() {
             from={{ opacity: 0, y: 40 }}
             to={{ opacity: 1, y: 0 }}
             threshold={0.3}
-            rootMargin="-100px"
+            rootMargin="-50px"
             textAlign="left"
             className="text-[14px] md:text-[15px] leading-6 font-thin tracking-widest mb-6 font-sans"
           />

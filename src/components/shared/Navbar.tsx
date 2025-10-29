@@ -13,7 +13,7 @@ const navItems: INav[] = [
   { title: "home", href: "#home" },
   { title: "Work", href: "#work" },
   { title: "About", href: "#about" },
-  { title: "Projects", href: "#projects" },
+  // { title: "Projects", href: "#projects" },
   { title: "Service", href: "#service" },
   { title: "Contact", href: "#contact" },
 ];

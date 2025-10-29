@@ -3,7 +3,7 @@
 import Image from "next/image";
 import InfiniteScroll from "../AnimateComponent/InfiniteScroll";
 import SectionHeader from "../shared/SectionHeader";
-import ScrollStack, { ScrollStackItem } from "../AnimateComponent/ScrollStact";
+// import ScrollStack, { ScrollStackItem } from "../AnimateComponent/ScrollStact";
 
 const items = [
   {
@@ -46,7 +46,7 @@ export default function CreativityInfiniteScroll() {
         />
 
         <div className="w-full h-[420px] md:h-[540px] shadow-2xl shadow-indigo-900/20 overflow-hidden border border-indigo-900/10 rounded-2xl ">
-          <ScrollStack
+          {/* <ScrollStack
             className="p-0! w-full! 
           //  [scrollbar-width:none] [&::-webkit-scrollbar]:hidden
            "
@@ -75,7 +75,7 @@ export default function CreativityInfiniteScroll() {
                 </div>
               </ScrollStackItem>
             ))}
-          </ScrollStack>
+          </ScrollStack> */}
         </div>
       </div>
     </section>

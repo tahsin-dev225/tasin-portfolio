@@ -71,13 +71,11 @@
 //           >
 //           </Ribbons>
 //         </div>
-//       </div> 
-       
+//       </div>
+
 //     </section>
 //   );
 // }
-
-
 
 import { Code2, Database, Lock, CreditCard, Layout, Cloud } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
@@ -154,17 +152,25 @@ export default function Services() {
   }, []);
 
   return (
-    <section id="service" ref={sectionRef} className="py-8 md:py-12  xl:py-20 relative overflow-hidden">
+    <section
+      id="service"
+      ref={sectionRef}
+      className="py-8 md:py-12  xl:py-20 relative overflow-hidden"
+    >
       {/* Background gradients */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          
-          <SectionHeader title="My Services" 
-          subtitle="Transforming ideas into powerful digital experiences that help brands grow, engage audiences, and build meaningful project."
-          // className={`isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"`}
+      <div className=" mx-auto px-2 xsm:px-2.5 smm:px-3 sm:px-4 md:px-6 relative z-10">
+        <div
+          className={`text-center mb-16 transition-all duration-700 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
+          <SectionHeader
+            title="My Services"
+            subtitle="Transforming ideas into powerful digital experiences that help brands grow, engage audiences, and build meaningful project."
+            // className={`isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"`}
           />
         </div>
 
@@ -173,35 +179,40 @@ export default function Services() {
             <div
               key={idx}
               className={`group relative transition-all duration-700  ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-10"
               }`}
               style={{
                 transitionDelay: `${idx * 100}ms`,
               }}
-              >
+            >
               {/* Glow effect on hover */}
-              <div className={`absolute -inset-0.5 bg-gradient-to-r ${service.color} rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition duration-500`} />
-              
-                {/* Card */}
-                <div className="relative h-full p-8 rounded-2xl hover:rounded-b-non bg-card/50 border bg-sky-500/5 backdrop-blur-2xl border-indigo-400/20 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2">
-                  {/* Icon container with gradient */}
-                  <div className={`mb-6 inline-flex p-4 rounded-xl bg-gradient-to-br ${service.color} shadow-lg ${service.shadowColor} group-hover:shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:rotate-3`}>
-                    <div className="text-white">
-                      {service.icon}
-                    </div>
-                  </div>
+              <div
+                className={`absolute -inset-0.5 bg-gradient-to-r ${service.color} rounded-2xl opacity-0 group-hover:opacity-5 blur-xl transition duration-500`}
+              />
 
-                  <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors duration-300">
-                    {service.title}
-                  </h3>
-                  
-                  <p className="text-muted-foreground leading-relaxed">
-                    {service.desc}
-                  </p>
-
-                  {/* Decorative bottom border */}
-                  <div className={`absolute bottom-1 left-0 h-1 w-0 bg-gradient-to-r ${service.color} group-hover:w-[99%] translate-1 transition-all duration-500 rounded-full`} />
+              {/* Card */}
+              <div className="relative h-full p-3.5 xsm:p-4 smm:p-5 sm:p-6 rounded-2xl hover:rounded-b-non bg-card/50 border bg-sky-500/5 backdrop-blur-2xl border-indigo-400/20 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2">
+                <div
+                  className={`mb-6 inline-flex p-1.5 smm:p-2.5 sm:p-4 rounded-xl bg-gradient-to-br ${service.color} shadow-lg ${service.shadowColor} group-hover:shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:rotate-3`}
+                >
+                  <div className="text-white">{service.icon}</div>
                 </div>
+
+                <h3 className=" text-lg sm:text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors duration-300">
+                  {service.title}
+                </h3>
+
+                <p className="text-muted-foreground text-[15px] sm:text-base font-mono text-[#a29f9f] leading-relaxed">
+                  {service.desc}
+                </p>
+
+                {/* Decorative bottom border */}
+                <div
+                  className={`absolute bottom-1 left-0 h-[1px] opacity-35 group-hover:left- w-0 bg-gradient-to-r ${service.color} group-hover:w-[99%] translate-1 transition-all duration-500 rounded-full`}
+                />
+              </div>
             </div>
           ))}
         </div>

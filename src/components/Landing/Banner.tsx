@@ -57,7 +57,7 @@ const Banner = () => {
               experiences that make meaning and impact.
             </p>
 
-            <button className=" primary-button px-3  py-1.5 sm:py-2.5 sm:px-6 3xl:py-3 3xl:px-8 3xl:text-2xl! mt-16! md:mt-4! ">
+            <button className=" primary-button px-3  py-1.5 sm:py-2.5 sm:px-6 3xl:py-3 3xl:px-8 3xl:text-xl! mt-16! md:mt-4! ">
               Here Me..
             </button>
           </div>
@@ -103,10 +103,16 @@ const Banner = () => {
             <Image
               src="/img/tran-tasin.png"
               alt="Profile"
+              fill
+              className="object-cover xxl:hidden "
+            />
+            <Image
+              src="/img/tran-tasin.png"
+              alt="Profile"
               // fill
               height={500}
               width={500}
-              className="object-cover 3xl:h-[400px] 3xl:w-[400px]"
+              className="object-cover hidden xxl:flex 3xl:h-[340px] 3xl:w-[340px]"
             />
           </div>
         </div>

@@ -14,7 +14,7 @@ export default function Contact() {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
-  const notify = (str:string) => toast(str);
+  const notify = (str: string) => toast(str);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -40,37 +40,40 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-7 md:py-10 mb-2 md:mb-8  xl:py-16 relative font-sans text-gray-200" id="contact">
+    <section
+      className="py-7 md:py-10 mb-2 md:mb-8 bg-[#72a7f503]  xl:py-16 relative font-sans text-gray-200"
+      id="contact"
+    >
       <ToastContainer />
-      <div className="max-w-6xl mx-auto px-6">
-        <SectionHeader title="Get In Touch"
-         subtitle="I’m always open to discussing new projects, creative ideas, or opportunities to be part of your visions."/>
+      <div className="absolute -z-30 rounded-full blur-3xl bg-gradient-to-r from-sky-500/10 via-cyan-800/20 to-purple-400/10 size-48 md:size-72 top-1/2 right-5/12"></div>
 
-        <div className="grid sm:grid-cols-2 gap-10 items-center">
+      <div className="max-w-6xl 2xl:max-w-7xl 3xl:max-w-[1380px] mx-auto px-2 smm:px-3 sm:px-4 md:px-6">
+        <SectionHeader
+          title="Get In Touch"
+          subtitle="I’m always open to discussing new projects, creative ideas, or opportunities to be part of your visions."
+        />
+
+        <div className="grid sm:grid-cols-2 z-40 gap-10 items-center">
           {/* Contact info */}
-          <div className="flex flex-col justify-between px-3 h-full lg:h-[84%] mt-auto">
-            <div className="space-y-6 z-20">
-
-            
-              <div className="flex items-center gap-4">
+          <div className="flex flex-col justify-between px-3 rounded-2xl bg-white/5 border-[1px] border-sky-300/10 p-2.5 h-full lg:h-[100%] mt-auto">
+            <div className="space-y-6 py-2 md:py-4 px-1.5 md:px-3.5">
+              <div className="flex text-[13px] xsm:text-[14px] smm:text-[15px] sm:text-base items-center gap-2 sm:gap-4">
                 <Mail className="w-6 h-6 text-blue-500" />
-                <span className="text-gray-300">
-                  ahmedtasin225@email.com
-                </span>
+                <span className="text-gray-300">ahmedtasin225@gmail.com</span>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex text-[13px] xsm:text-[14px] smm:text-[15px] sm:text-base items-center gap-2 sm:gap-4">
                 <Phone className="w-6 h-6 text-green-600" />
                 <span className="text-gray-300">+880 01331224641</span>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex text-[13px] xsm:text-[14px] smm:text-[15px] sm:text-base items-center gap-2 sm:gap-4">
                 <MapPin className="w-6 h-6 text-red-800" />
                 <span className="text-gray-300">
                   Kuchiamora, Munshigonj, Dhaka, Bangladesh
                 </span>
               </div>
             </div>
-            <div className="shadow-2xl py-4 px-2.5 shadow-sky-400/5 z-20">
-                <div className=" border-b border-gray-600 w-[80%]"></div>
+            <div className="shadow-2xl py-4 px-2.5 shadow-sky-400/5">
+              <div className=" border-b border-sky-600/30 w-[100%]"></div>
 
               <h3 className="text-sm sm:text-lg mt-2! font-medium bg-gradient-to-r from-indigo-400 via-pink-500 to-orange-400 bg-clip-text text-transparent">
                 Also contact with social media.
@@ -100,13 +103,12 @@ export default function Contact() {
                 </a>
               </div>
             </div>
-            
           </div>
 
           {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
-            className="space-y-6 z-20 bg-[#14141f] p-6 rounded-xl shadow-lg border border-gray-800"
+            className="space-y-6 bg-white/5 p-3 smm:p-4 sm:p-5 md:p-6 rounded-xl shadow-lg border border-sky-300/10"
           >
             <div>
               <label className="block text-sm mb-2 text-gray-400">Email</label>
@@ -116,19 +118,21 @@ export default function Contact() {
                 value={email}
                 required
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full p-3 rounded-md bg-[#1e1e2d] border border-gray-700 text-gray-200 focus:outline-none focus:border-indigo-500"
+                className="w-full p-3 rounded-md bg-[#1e1e2d64] border border-gray-700 text-gray-200 focus:outline-none focus:border-indigo-500"
               />
             </div>
 
             <div>
-              <label className="block text-sm mb-2 text-gray-400">Message</label>
+              <label className="block text-sm mb-2 text-gray-400">
+                Message
+              </label>
               <textarea
                 placeholder="Write your message..."
                 rows={4}
                 required
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="w-full p-3 rounded-md bg-[#1e1e2d] border border-gray-700 text-gray-200 focus:outline-none focus:border-indigo-500"
+                className="w-full p-3 rounded-md bg-[#1e1e2d45] border border-gray-700 text-gray-200 focus:outline-none focus:border-indigo-500"
               />
             </div>
 
@@ -146,7 +150,7 @@ export default function Contact() {
           </form>
         </div>
       </div>
-      {/* <div className="w-full top-0 h-full z-10 absolute overflow-hidden">
+      {/* <div className="w-full top-0 h-full absolute overflow-hidden">
          <div className="relative h-full overflow-hidden " >
            <Ribbons
              baseThickness={20}
