@@ -4,6 +4,7 @@ import Image from "next/image";
 import Orb from "../AnimateComponent/AnimatedCircleOrb";
 import Particles from "../AnimateComponent/AnimatedBgParticle";
 import Navbar from "../shared/Navbar";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -57,9 +58,12 @@ const Banner = () => {
               experiences that make meaning and impact.
             </p>
 
-            <button className=" primary-button px-3  py-1.5 sm:py-2.5 sm:px-6 3xl:py-3 3xl:px-8 3xl:text-xl! mt-16! md:mt-4! ">
+            <Link
+              href={"#contact"}
+              className=" primary-button px-3  py-1.5 sm:py-2.5 sm:px-6 3xl:py-3 3xl:px-8 3xl:text-xl! mt-16! md:mt-4! "
+            >
               Here Me..
-            </button>
+            </Link>
           </div>
         </div>
 

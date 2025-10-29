@@ -8,7 +8,7 @@ import Journey4 from "./Journey4";
 
 export default function MyLearningJourney() {
   return (
-    <section className="relative lg:mt-14">
+    <section id="journey" className="relative lg:mt-14">
       <JourneyBanner></JourneyBanner>
 
       <Journey2 />
