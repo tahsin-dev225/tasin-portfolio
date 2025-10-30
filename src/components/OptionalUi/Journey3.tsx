@@ -14,7 +14,7 @@ import { FaReact } from "react-icons/fa6";
 
 function JourneyThree() {
   return (
-    <ScrollStackItems bgImg={"/img/exbg3.jpg"} cardBg="bg-indigo-95 ">
+    <ScrollStackItems bgImg={"/img/exbg3.png"} cardBg="bg-indigo-95 ">
       <div className="b-[#23080832] flex flex-col sm:flex-row p-3 sm:p-0 bg-white/5 items-center gap-5 md:gap-10">
         <Image
           src={"/img/pcourse1.jpg"}

@@ -13,7 +13,7 @@ import SplitText from "../AnimateComponent/SpliteText";
 
 function JourneyBanner() {
   return (
-    <ScrollStackItems bgImg="/img/exbg.jpg" cardBg="bg-[#ff]">
+    <ScrollStackItems bgImg="/img/exbg.png" cardBg="bg-[#ff]">
       <div className="b-[#23080832] flex flex-col sm:flex-row p-3 sm:p-0 bg-white/5 items-center gap-5 md:gap-10">
         <Image
           src={"/img/growth.jpg"}

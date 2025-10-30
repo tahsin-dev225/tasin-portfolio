@@ -72,7 +72,7 @@ export default function Contact() {
                 </span>
               </div>
             </div>
-            <div className="shadow-2xl py-4 px-2.5 shadow-sky-400/5">
+            <div className=" py-4 px-2.5 shadow-sky-400/5">
               <div className=" border-b border-sky-600/30 w-[100%]"></div>
 
               <h3 className="text-sm sm:text-lg mt-2! font-medium bg-gradient-to-r from-indigo-400 via-pink-500 to-orange-400 bg-clip-text text-transparent">

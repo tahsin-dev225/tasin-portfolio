@@ -13,7 +13,7 @@ import {
 
 function Journey4() {
   return (
-    <ScrollStackItems bgImg={"/img/exbg4.jpg"} cardBg="bg-[#101726 ]">
+    <ScrollStackItems bgImg={"/img/exbg4.png"} cardBg="bg-[#101726 ]">
       <div className="b-[#23080832] flex flex-col sm:flex-row p-3 sm:p-0 bg-white/5 items-center gap-5 md:gap-10">
         <Image
           src={"/img/learnBnr.jpg"}

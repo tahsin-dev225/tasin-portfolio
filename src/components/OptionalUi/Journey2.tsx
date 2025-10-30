@@ -11,7 +11,7 @@ import { FaFreeCodeCamp } from "react-icons/fa";
 
 function Journey2() {
   return (
-    <ScrollStackItems cardBg="bg-[#23080852 ]" bgImg={"/img/exbg2.jpg"}>
+    <ScrollStackItems cardBg="bg-[#23080852 ]" bgImg={"/img/exbg2.png"}>
       <div className="b-[#23080832] flex flex-col sm:flex-row p-3 sm:p-0 bg-white/5 items-center gap-5 md:gap-10">
         <Image
           src={"/img/exploreYt.jpg"}
