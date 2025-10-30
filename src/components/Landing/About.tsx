@@ -13,7 +13,7 @@ export default function AboutMe() {
         <div className="relative w-full group mx-auto">
           <div className="absolute -inset-1 bg-gradient-to-r from-purple-600/5 to-indigo-600/5 rounded-2xl blur opacity-40 group-hover:opacity-60 transition duration-500"></div>
           <Image
-            src="/img/aboutme.png"
+            src="/img/aboutme.jpg"
             alt="Tasin Ahmed"
             width={500}
             height={500}

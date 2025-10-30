@@ -11,10 +11,10 @@ import { FaFreeCodeCamp } from "react-icons/fa";
 
 function Journey2() {
   return (
-    <ScrollStackItems cardBg="bg-[#23080852 ]" bgImg={"/img/exbg2.png"}>
+    <ScrollStackItems cardBg="bg-[#23080852 ]" bgImg={"/img/exbg2.jpg"}>
       <div className="b-[#23080832] flex flex-col sm:flex-row p-3 sm:p-0 bg-white/5 items-center gap-5 md:gap-10">
         <Image
-          src={"/img/exploreYt.png"}
+          src={"/img/exploreYt.jpg"}
           className="w-1/3  lg:w-full rounded-2xl"
           height={500}
           width={800}

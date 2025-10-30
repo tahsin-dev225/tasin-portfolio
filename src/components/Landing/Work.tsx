@@ -23,7 +23,7 @@ const works: WorksType[] = [
     duration: "6000ms",
     language: ["React", "next.js", "typeScript"],
     url: "https://shoply-client.vercel.app/",
-    img: "/img/shoplyFull.png", // "/img/work-shoply2.png", "/img/shoply3.png",
+    img: "/img/shoplyFull.jpg",
     github: "https://github.com/sabbir53rahman/Shoply_client",
     title:
       "A complete secured e-commerce collabrated website. Modern frontend design, scalable server using Express, Well-structured Mongoose schemas and Zod validation. Every route is designed for efficiency, security, and clean data flow.",
@@ -33,7 +33,7 @@ const works: WorksType[] = [
     duration: "8000ms",
     language: ["React", "next.js", "typeScript"],
     url: "https://learn-management-frontend.vercel.app",
-    img: "/img/learneticFull.png",
+    img: "/img/learneticFull.jpg",
     github: "https://github.com/tahsin-dev225/learn-management-frontend",
     title:
       "It's a learn management website where course are sold.Teacher can uplaod their youtube video link and student can see their needed course.",
@@ -43,7 +43,7 @@ const works: WorksType[] = [
     duration: "4000ms",
     language: ["React", "next.js", "typeScript"],
     url: "https://building-management-assignment.vercel.app",
-    img: "/img/buildingFull.png",
+    img: "/img/buildingFull.jpg",
     github: "https://github.com/tahsin-dev225/building-management-assignment",
     title:
       "This is a building management website. I have make this website for practice perpose and to increase logical thinks.",
@@ -53,7 +53,7 @@ const works: WorksType[] = [
     duration: "9000ms",
     language: ["React", "next.js", "typeScript"],
     url: "https://coco-tsx.vercel.app/",
-    img: "/img/coco.png",
+    img: "/img/coco.jpg",
     github: "https://github.com/tahsin-dev225/coco-tsx",
     title:
       "I tried to make a pixel perfect and complex web desing. I have chosse a complex FIGMA design and made it. I have applied some gorgios enimation.",
@@ -63,7 +63,7 @@ const works: WorksType[] = [
     duration: "2400ms",
     language: ["React", "next.js", "typeScript"],
     url: "https://learn-management-frontend.vercel.app",
-    img: "/img/royal-selon.png",
+    img: "/img/royal-selon.jpg",
     github: "https://github.com/tahsin-dev225/royal-salon-next",
     title:
       "I have feel that in there have a serial related problem so i tried to make a well serial maintained website for salon.",

@@ -47,12 +47,12 @@ const Banner = () => {
               />
             </p>
 
-            <h1 className="  text-[18px] xsm:text-[22px] smm:text-[28px] sm:text-[36px]  md:text-5xl lg:text-4xl elg:text-5xl xl:text-[52px] xxl:text-[56px] 3xl:text-[65px] font-bold leading-snug mb-6">
+            <h1 className="  text-[18px] xsm:text-[22px] smm:text-[28px] sm:text-[36px]  md:text-5xl lg:text-4xl elg:text-5xl xl:text-[52px] xxl:text-[56px] 3xl:text-[65px] font-bold leading-snug mb-6 md:mb-2.5">
               Building Modern Website <br />
               with React, Next.js & Tailwind
             </h1>
 
-            <p className="text-gray-400 leading-relaxed text-[11px] smm:text-[15px] xxl:text-[16px] 3xl:text-lg max-w-lg mb-6 md:mb-0">
+            <p className="text-gray-400 leading-relaxed text-[11px] smm:text-[15px] font-sans xxl:text-[16px] 3xl:text-lg max-w-lg mb-6 md:mb-0 lg:mb-2">
               Through the fusion of different business goals, design thinking,
               and innovative ideas, I craft seamless and delightful user
               experiences that make meaning and impact.
