@@ -24,7 +24,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Tasin Ahmed",
   description:
-    "tasin portfolio tasinahmed-dev tahsin tahsin-ahmed tasin ahmed tasin-dev tasin-ahmed developer tasin-developer  tasinahmed-dev.com",
+    "tasin portfolio tasinahmed-dev tahsin tahsin-ahmed tasin ahmed tasin-dev tasin-ahmed developer tasin-developer tasin-ahmed-webdeveloper webdeveloper web develper tasinahmed-dev.com",
 };
 
 export default function RootLayout({
