@@ -8,9 +8,9 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div id="home" className="sm:min-h-screen xxl:min-h-auto! overflow-hidden ">
+    <div id="home" className="min-h-screen xxl:min-h-auto! overflow-hidden ">
       <Navbar />
-      <section className="relative flex flex-col-reverse lg:flex-row  gap-5 px-3 xsm:px-4  3xl:py-40 sm:px-10 items-center md:py-[74px] overflow-hidden">
+      <section className="relative flex flex-col-reverse py-3 lg:flex-row  gap-5 px-3 xsm:px-4  3xl:py-40 sm:px-10 items-center md:py-[74px] overflow-hidden">
         <div className="absolute inset-0 z-10">
           <Particles
             particleColors={["#23096f", "#8cb7f1"]}

@@ -8,7 +8,7 @@ import SmoothScroll from "@/components/Ui/SmothScroll";
 const bitter = Bitter({
   variable: "--font-bitter",
   subsets: ["latin"],
-  weight: ["400", "500", "700"], // যেসব weight দরকার
+  weight: ["400", "500", "700"],
 });
 
 const geistSans = Geist({
