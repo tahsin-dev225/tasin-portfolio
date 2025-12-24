@@ -17,7 +17,7 @@ function Journey4() {
       <div className="b-[#23080832] flex flex-col sm:flex-row p-3 sm:p-0 bg-white/5 items-center gap-5 md:gap-10">
         <Image
           src={"/img/learnBnr.jpg"}
-          className="w-1/3 h-full rounded-2xl"
+          className="w-full xsm:w-[80%] smm:w-[70%] sm:w-1/3 h-full rounded-2xl"
           height={500}
           width={500}
           alt="beggining"

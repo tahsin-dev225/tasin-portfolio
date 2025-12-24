@@ -11,8 +11,8 @@ const Banner = () => {
     <div id="home" className="min-h-screen xxl:min-h-auto! overflow-hidden ">
       <Navbar />
       <section
-        className="relative  flex flex-col-reverse py-3 xsm:py-4 smm:py-10 lg:flex-row  gap-5 px-3 xsm:px-4 xl:py-28 
-        2xl:py-32 3xl:py-40 sm:px-10 items-center md:py-[74px] overflow-hidden"
+        className="relative  flex flex-col-reverse py-3 xsm:py-4  smm:py-10 lg:flex-row  gap-5 px-3 xsm:px-4 xl:py-10 
+        2xl:py-16 3xl:py-40 sm:px-10 items-center md:py-[74px] overflow-hidden"
       >
         <div className="absolute inset-0 z-10">
           <Particles
@@ -31,7 +31,7 @@ const Banner = () => {
         <div className="w-full 3xl:py-10  z-40">
           <div className="smm:mx-auto 3xl:py-20 w-full sm:pt-10 sm:w-max lg:w-full">
             <p
-              className="uppercase xl:ml-2.5 font-sans h-[30px] smm:h-auto text-[14px] xsm:text-[15px] sm:text-[16px] 
+              className="uppercase  font-sans h-[30px] smm:h-auto text-[14px] xsm:text-[15px] sm:text-[16px] 
               md:text-[18px] lg:text-[20px] xxl:text-3xl 3xl:text- tracking-wide text-[#fbf0cb] mt-2!   mb-4 md:mb-0!"
             >
               I’m{" "}
