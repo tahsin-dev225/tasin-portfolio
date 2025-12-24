@@ -68,7 +68,7 @@ const Navbar = () => {
       </Link>
 
       {/* desktop nav */}
-      <div className="hidden md:flex gap-10 text-sm uppercase font-semibold">
+      <div className="hidden md:flex md:gap-5 lg:gap-10 text-sm uppercase font-semibold">
         {navItems.map((item) => (
           <Link
             key={item.href}
@@ -108,7 +108,7 @@ const Navbar = () => {
         <Link
           href="#contact"
           onClick={(e) => handleScroll(e, "#contact")}
-          className="primary-button text-sm px-3 py-1.5 sm:py-2.5 sm:px-6 3xl:py-3.5 3xl:px-9 3xl:text-xl transition-all duration-300 hover:scale-[1.05]"
+          className="primary-button text-[13px] sm:text-sm px-3 py-1.5 sm:py-2.5 sm:px-6 3xl:py-3.5 3xl:px-9 3xl:text-xl transition-all duration-300 hover:scale-[1.05]"
         >
           Lets Contact
         </Link>

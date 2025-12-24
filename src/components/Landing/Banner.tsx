@@ -8,9 +8,12 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div id="home" className="sm:min-h-screen xxl:min-h-auto! overflow-hidden ">
+    <div id="home" className="min-h-screen xxl:min-h-auto! overflow-hidden ">
       <Navbar />
-      <section className="relative flex flex-col-reverse py-3 xsm:py-4 smm:py-5 lg:flex-row  gap-5 px-3 xsm:px-4  3xl:py-40 sm:px-10 items-center md:py-[74px] overflow-hidden">
+      <section
+        className="relative  flex flex-col-reverse py-3 xsm:py-4 smm:py-10 lg:flex-row  gap-5 px-3 xsm:px-4 xl:py-28 
+        2xl:py-32 3xl:py-40 sm:px-10 items-center md:py-[74px] overflow-hidden"
+      >
         <div className="absolute inset-0 z-10">
           <Particles
             particleColors={["#23096f", "#8cb7f1"]}
@@ -27,7 +30,10 @@ const Banner = () => {
         {/* left side text */}
         <div className="w-full 3xl:py-10  z-40">
           <div className="smm:mx-auto 3xl:py-20 w-full sm:pt-10 sm:w-max lg:w-full">
-            <p className="uppercase xl:ml-2.5 font-sans h-[50px] smm:h-auto text-[14px] xsm:text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xxl:text-3xl 3xl:text- tracking-wide text-[#fbf0cb] md:mt-2 !mt-10 mb-4 md:mb-0!">
+            <p
+              className="uppercase xl:ml-2.5 font-sans h-[30px] smm:h-auto text-[14px] xsm:text-[15px] sm:text-[16px] 
+              md:text-[18px] lg:text-[20px] xxl:text-3xl 3xl:text- tracking-wide text-[#fbf0cb] mt-2!   mb-4 md:mb-0!"
+            >
               I’m{" "}
               <span className="text-[#dbea53] font-medium font- bitter-font">
                 Tasin
@@ -47,23 +53,31 @@ const Banner = () => {
               />
             </p>
 
-            <h1 className="  text-[18px] xsm:text-[22px] smm:text-[28px] sm:text-[36px]  md:text-5xl lg:text-4xl elg:text-5xl xl:text-[52px] xxl:text-[56px] 3xl:text-[65px] font-bold leading-snug mb-6 md:mb-2.5">
+            <h1
+              className="  text-[18px] xsm:text-[26px] smm:text-[32px] sm:text-[36px]  md:text-5xl lg:text-4xl elg:text-5xl 
+              xl:text-[52px] xxl:text-[56px] 3xl:text-[65px] font-bold leading-snug mb-6 md:mb-2.5"
+            >
               Building Modern Website <br />
               with React, Next.js & Tailwind
             </h1>
 
-            <p className="text-gray-400 leading-relaxed text-[11px] smm:text-[15px] font-sans xxl:text-[16px] 3xl:text-lg max-w-lg mb-6 md:mb-0 lg:mb-2">
+            <p
+              className="text-gray-400 leading-relaxed text-[11px] xsm:text-[14px] smm:text-[15px] font-sans xxl:text-[16px] 
+              3xl:text-lg max-w-lg mb-6 md:mb-0 lg:mb-2"
+            >
               Through the fusion of different business goals, design thinking,
               and innovative ideas, I craft seamless and delightful user
               experiences that make meaning and impact.
             </p>
 
-            <Link
-              href={"#contact"}
-              className=" primary-button px-3  py-1.5 sm:py-2.5 sm:px-6 3xl:py-3 3xl:px-8 3xl:text-xl! mt-16! md:mt-4! "
-            >
-              Here Me..
-            </Link>
+            <div className=" mt-10! md:mt-4! lg:mt-10!">
+              <Link
+                href={"#contact"}
+                className=" primary-button px-4  py-1.5 sm:py-2.5 sm:px-6 3xl:py-3 3xl:px-8 3xl:text-xl! "
+              >
+                Here Me..
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -80,7 +94,8 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className="relative w-[250px] h-[250px] md:w-[350px] md:h-[350px] rounded-full overflow-hidden shadow-lg border- border-gray-800 z-10">
+          <div className="relative w-[250px] h-[250px] md:w-[350px] md:h-[350px] rounded-full overflow-hidden shadow-lg border- 
+          border-gray-800 z-10">
             <Image
               src="/img/tran-tasin.png"
               alt="Profile"
@@ -90,10 +105,13 @@ const Banner = () => {
           </div>
         </div> */}
 
-        <div className="relative flex flex-col items-center justify-center w-full lg:w-[90%] mx-auto">
+        <div className="relative flex flex-col items-center py-5 lg:px-4 justify-center w-full lg:w-[90%] mx-auto">
           {/* Orb Background */}
           <div className="absolute  inset-0 flex items-center justify-center z-0 lg:z-40">
-            <div className="w-[220px] h-[220px] sm:w-[350px] sm:h-[350px] md:w-[500px] md:h-[500px] lg:min-w-[600px] lg:min-h-[600px]  3xl:min-h-[600px] 3xl:min-w-[600px]">
+            <div
+              className="size-[220px] xsm:size-[540px] sm:w-[350px] sm:h-[350px] md:w-[500px] md:h-[500px] lg:min-w-[600px]
+             lg:min-h-[600px]  3xl:min-h-[600px] 3xl:min-w-[600px]"
+            >
               <Orb
                 hoverIntensity={0.5}
                 rotateOnHover={true}
@@ -103,7 +121,10 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className="relative z-10 w-[180px] smm:py-4 h-[180px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] 3xl:w-full 3xl:h-full rounded-full overflow-hidden">
+          <div
+            className="relative z-10 size-[180px] xsm:size-[300px] smm:py-4 sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px]
+           lg:w-[350px] lg:h-[350px] 3xl:w-full 3xl:h-full rounded-full overflow-hidden"
+          >
             <Image
               src="/img/tran-tasin.png"
               alt="Profile"
