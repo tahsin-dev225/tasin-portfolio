@@ -31,8 +31,8 @@ const Banner = () => {
         <div className="w-full 3xl:py-10  z-40">
           <div className="smm:mx-auto 3xl:py-20 w-full sm:pt-10 sm:w-max lg:w-full">
             <p
-              className="uppercase  font-sans h-[30px] smm:h-auto text-[14px] xsm:text-[15px] sm:text-[16px] 
-              md:text-[18px] lg:text-[20px] xxl:text-3xl 3xl:text- tracking-wide text-[#fbf0cb] mt-2!   mb-4 md:mb-0!"
+              className="uppercase  font-sans h-[30px] mb-1! smm:h-auto text-[14px] xsm:text-[15px] sm:text-[16px] 
+              md:text-[18px] lg:text-[20px] xxl:text-3xl 3xl:text- tracking-wide text-[#fbf0cb]"
             >
               I’m{" "}
               <span className="text-[#dbea53] font-medium font- bitter-font">
@@ -54,8 +54,8 @@ const Banner = () => {
             </p>
 
             <h1
-              className="  text-[18px] xsm:text-[26px] smm:text-[32px] sm:text-[36px]  md:text-5xl lg:text-4xl elg:text-5xl 
-              xl:text-[52px] xxl:text-[56px] 3xl:text-[65px] font-bold leading-snug mb-6 md:mb-2.5"
+              className="  text-[18px] xsm:text-[24px] smm:text-[32px] sm:text-[36px]  md:text-5xl lg:text-4xl elg:text-5xl 
+              xl:text-[52px] xxl:text-[56px] 3xl:text-[65px] font-bold leading-snug mb-2 md:mb-2.5"
             >
               Building Modern Website <br />
               with React, Next.js & Tailwind
@@ -122,7 +122,7 @@ const Banner = () => {
           </div>
 
           <div
-            className="relative z-10 size-[180px] xsm:size-[300px] smm:py-4 sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px]
+            className="relative z-10 size-[180px] xsm:size-[270px] smm:py-4 sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px]
            lg:w-[350px] lg:h-[350px] 3xl:w-full 3xl:h-full rounded-full overflow-hidden"
           >
             <Image
