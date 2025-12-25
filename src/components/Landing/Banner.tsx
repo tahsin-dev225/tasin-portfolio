@@ -8,10 +8,10 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div id="home" className="min-h-screen xxl:min-h-auto! overflow-hidden ">
+    <div id="home" className="md:min-h-screen xxl:min-h-auto! overflow-hidden ">
       <Navbar />
       <section
-        className="relative  flex flex-col-reverse py-3 xsm:py-4  smm:py-10 lg:flex-row  gap-5 px-3 xsm:px-4 xl:py-10 
+        className="relative  flex flex-col-reverse py-3 xsm:py-4 smm:py-10 lg:flex-row  gap-5 px-3 xsm:px-4 xl:py-10 
         2xl:py-16 3xl:py-40 sm:px-10 items-center md:py-[74px] overflow-hidden"
       >
         <div className="absolute inset-0 z-10">
@@ -70,7 +70,7 @@ const Banner = () => {
               experiences that make meaning and impact.
             </p>
 
-            <div className=" mt-10! md:mt-4! lg:mt-10!">
+            <div className=" mt-6! md:mt-4! lg:mt-10!">
               <Link
                 href={"#contact"}
                 className=" primary-button px-4  py-1.5 sm:py-2.5 sm:px-6 3xl:py-3 3xl:px-8 3xl:text-xl! "

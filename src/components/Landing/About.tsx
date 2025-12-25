@@ -6,9 +6,9 @@ export default function AboutMe() {
   return (
     <section
       id="about"
-      className="relative my-6 sm:my-14 text-gray-200 pt-6 md:pt-8  lg:pt-12 xl:pt-20 p-4 "
+      className="relative my-6 sm:my-14 text-gray-200 pt-6 md:pt-8 md:rounded-lg bg-gradient-to-t from-[#5c81ee2e] to-[#808af41c] lg:pt-12 xl:pt-20 p-4 "
     >
-      <div className="max-w-6x mx-auto rounded-2xl bg-gradient-to-t font- from-[#5c81ee06] to-[#808af403] flex justify-center flex-col-reverse md:flex-row gap-10 items-center">
+      <div className="max-w-6x mx-auto rounded-2xl bg-gradient-to-t font-   md:from-[#5c81ee06] md:to-[#808af403] flex justify-center flex-col-reverse md:flex-row gap-10 items-center">
         {/* Image */}
         <div className="relative w-full group mx-auto">
           <div className="absolute -inset-1 bg-gradient-to-r from-purple-600/5 to-indigo-600/5 rounded-2xl blur opacity-40 group-hover:opacity-60 transition duration-500"></div>
@@ -34,7 +34,7 @@ export default function AboutMe() {
             threshold={0.1}
             rootMargin="-100px"
             textAlign="center"
-            className="text-3xl md:text-2xl lg:text-3xl font-bold"
+            className="text-3xl md:text-2xl text-center lg:text-3xl font-bold"
           />
           <SplitText
             text={`Hi, Im Tasin, a passionate Full-Stack Web Developer with expertise in building 
