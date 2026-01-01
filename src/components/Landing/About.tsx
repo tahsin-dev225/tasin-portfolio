@@ -6,7 +6,7 @@ export default function AboutMe() {
   return (
     <section
       id="about"
-      className="relative my-6 sm:my-14 text-gray-200 pt-6 md:pt-8 md:rounded-lg bg-gradient-to-t from-[#5c81ee2e] to-[#808af41c] lg:pt-12 xl:pt-20 p-4 "
+      className="relative my-6 sm:my-14 text-gray-200 pt-6 md:pt-8 md:rounded-lg bg-gradient-to-t from-[#5c81ee2e] to-[#808af41c] lg:from-[#5c81ee06] lg:to-[#808af405] lg:pt-12 xl:pt-20 p-4 "
     >
       <div className="max-w-6x mx-auto rounded-2xl bg-gradient-to-t font-   md:from-[#5c81ee06] md:to-[#808af403] flex justify-center flex-col-reverse md:flex-row gap-10 items-center">
         {/* Image */}
