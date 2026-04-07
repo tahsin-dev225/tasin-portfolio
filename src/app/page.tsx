@@ -6,10 +6,12 @@ import Work from "@/components/Landing/Work";
 import SkillsSection from "@/components/Landing/Skills";
 import Footer from "@/components/shared/Footer";
 import MyJourny from "@/components/OptionalUi/MyJourny";
+import Navbar from "@/components/shared/Navbar";
 
 export default function Home() {
   return (
     <main className=" bitter-font">
+      <Navbar />
       <div className="lg:w-[86%] mx-auto">
         <Banner />
         <AboutMe />

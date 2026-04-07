@@ -68,6 +68,34 @@ export default function AboutMe() {
             textAlign="left"
             className="text-[14px] md:text-[15px] leading-6 font-thin tracking-widest mb-6 font-sans"
           />
+
+          {/* educational info i am studing in political-science in Bikrampur Adharsa universty under national universty 2024 to present */}
+          <SplitText
+            text="Educaiton"
+            delay={100}
+            duration={0.6}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-30px"
+            textAlign="center"
+            className="text-xl md:text-lg text-center lg:text-lg font-semibold"
+          />
+          <SplitText
+            text={`I am a student of political-science in Bikrampur Adharsa universty under national universty (2024 to present)`}
+            delay={10}
+            duration={0.5}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.3}
+            rootMargin="-20px"
+            textAlign="left"
+            className="text-[14px] md:text-[15px] leading-6 font-thin tracking-widest mb-6 font-sans"
+          />
           <a
             href="#contact"
             className="inline-block  cursor-pointer px-6 py-3 bg-purple-600 text-white font-medium rounded-lg shadow-lg hover:bg-purple-700 transition"

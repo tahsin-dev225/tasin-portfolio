@@ -56,7 +56,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center px-3 sm:px-5 md:px-10 py-3 md:py-5">
+    <nav className="flex justify-between backdrop-blur bg-blue-950/5 sticky top-0 z-50 items-center px-3 sm:px-5 md:px-10 py-3 md:py-5">
       <Link href={"#home"}>
         <Image
           src="/img/sign-tran.png"

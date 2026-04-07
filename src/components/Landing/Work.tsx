@@ -13,18 +13,31 @@ type WorksType = {
   language: string[];
   url: string;
   img: string;
-  github: string;
+  frontend: string;
+  backend?: string;
   title: string;
 };
 
 const works: WorksType[] = [
   {
+    name: "Planora - Event Management website.",
+    duration: "6000ms",
+    language: ["TypeScript", "next.js","Express", "better-auth", "prisma", "postgresql"],
+    url: "https://planora-frontend-nu.vercel.app/",
+    img: "/img/planoraFull.png",
+    frontend: "https://github.com/tahsin-dev225/planora-frontend",
+    backend: "https://github.com/tahsin-dev225/planora-backend",
+    title:
+      "A complete secured event management website.Where anyone can create event and manage it. Modern frontend design, scalable server using Express, Well-structured Mongoose schemas and Zod validation. Every route is designed for efficiency, security, and clean data flow.",
+  },
+  {
     name: "Shoply - E-commerce website.",
     duration: "6000ms",
-    language: ["React", "next.js", "typeScript"],
+    language: ["next.js","redux", "typeScript","mongose","express"],
     url: "https://shoply-client.vercel.app/",
     img: "/img/shoplyFull.jpg",
-    github: "https://github.com/sabbir53rahman/Shoply_client",
+    frontend: "https://github.com/sabbir53rahman/Shoply_client",
+    backend: "https://github.com/sabbir53rahman/Shoply_server",
     title:
       "A complete secured e-commerce collabrated website. Modern frontend design, scalable server using Express, Well-structured Mongoose schemas and Zod validation. Every route is designed for efficiency, security, and clean data flow.",
   },
@@ -34,19 +47,10 @@ const works: WorksType[] = [
     language: ["React", "next.js", "typeScript"],
     url: "https://learn-management-frontend.vercel.app",
     img: "/img/learneticFull.jpg",
-    github: "https://github.com/tahsin-dev225/learn-management-frontend",
+    frontend: "https://github.com/tahsin-dev225/learn-management-frontend",
+    backend: "https://github.com/tahsin-dev225/learn-management-backend",
     title:
       "It's a learn management website where course are sold.Teacher can uplaod their youtube video link and student can see their needed course.",
-  },
-  {
-    name: "Building Management website.",
-    duration: "4000ms",
-    language: ["React", "next.js", "typeScript"],
-    url: "https://building-management-assignment.vercel.app",
-    img: "/img/buildingFull.jpg",
-    github: "https://github.com/tahsin-dev225/building-management-assignment",
-    title:
-      "This is a building management website. I have make this website for practice perpose and to increase logical thinks.",
   },
   {
     name: "Coco-Combat - Random Figma Design.",
@@ -54,30 +58,46 @@ const works: WorksType[] = [
     language: ["React", "next.js", "typeScript"],
     url: "https://coco-tsx.vercel.app/",
     img: "/img/coco.jpg",
-    github: "https://github.com/tahsin-dev225/coco-tsx",
+    frontend: "https://github.com/tahsin-dev225/coco-tsx",
+    // backend: "https://github.com/tahsin-dev225/coco-backend",
     title:
       "I tried to make a pixel perfect and complex web desing. I have chosse a complex FIGMA design and made it. I have applied some gorgios enimation.",
   },
-  {
-    name: "Salon's serial maintail website.",
-    duration: "2400ms",
-    language: ["React", "next.js", "typeScript"],
-    url: "https://learn-management-frontend.vercel.app",
-    img: "/img/royal-selon.jpg",
-    github: "https://github.com/tahsin-dev225/royal-salon-next",
-    title:
-      "I have feel that in there have a serial related problem so i tried to make a well serial maintained website for salon.",
-  },
-  {
-    name: "Inventory Management website.",
-    duration: "4000ms",
-    language: ["React", "next.js", "typeScript"],
-    url: "https://learn-management-frontend.vercel.app",
-    img: "/img/work-inventory.png",
-    github: "https://github.com/tahsin-dev225/inventory-management",
-    title:
-      "I make this website for explore more about inventory and dashboard related things. This type of practice has ",
-  },
+
+  // {
+  //   name: "Building Management website.",
+  //   duration: "4000ms",
+  //   language: ["React", "next.js", "typeScript"],
+  //   url: "https://building-management-assignment.vercel.app",
+  //   img: "/img/buildingFull.jpg",
+  //   frontend: "https://github.com/tahsin-dev225/building-management-assignment",
+  //   backend: "https://github.com/tahsin-dev225/building-management-backend",
+  //   title:
+  //     "This is a building management website. I have make this website for practice perpose and to increase logical thinks.",
+  // },
+
+  // {
+  //   name: "Salon's serial maintail website.",
+  //   duration: "2400ms",
+  //   language: ["React", "next.js", "typeScript"],
+  //   url: "https://learn-management-frontend.vercel.app",
+  //   img: "/img/royal-selon.jpg",
+  //   frontend: "https://github.com/tahsin-dev225/royal-salon-next",
+  //   backend: "https://github.com/tahsin-dev225/royal-salon-backend",
+  //   title:
+  //     "I have feel that in there have a serial related problem so i tried to make a well serial maintained website for salon.",
+  // },
+  // {
+  //   name: "Inventory Management website.",
+  //   duration: "4000ms",
+  //   language: ["React", "next.js", "typeScript"],
+  //   url: "https://learn-management-frontend.vercel.app",
+  //   img: "/img/work-inventory.png",
+  //   frontend: "https://github.com/tahsin-dev225/inventory-management",
+  //   backend: "https://github.com/tahsin-dev225/inventory-management-backend",
+  //   title:
+  //     "I make this website for explore more about inventory and dashboard related things. This type of practice has ",
+  // },
 ];
 
 const Work = () => {
@@ -91,14 +111,14 @@ const Work = () => {
         subtitle="Here are some of the projects and designs I’ve crafted with passion — blending clean code, modern UI, and creative ideas."
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-[98%] mx-auto gap-3 lg:gap-y-14 md:gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols- w-[98%] mx-auto gap-3 lg:gap-y-14 md:gap-8">
         {works?.map((work, idx) => (
           <div
             className="w-full border border-indigo-800/50 border-b-fuchsia-900/30 text-[#ece4e4] shadow-lg shadow-sky-900/10 rounded-[16px] bg-[#131B30]  ackdrop-blur-sm h-[100%]"
             key={idx}
           >
             <div
-              className={`relative p-3  group w-full h-[250px] rounded-t-2xl rounded-b overflow-hidden  shadow-lg
+              className={`relative p-3  group w-full h-[320px] rounded-t-2xl rounded-b overflow-hidden  shadow-lg
               bg-top hover:bg-bottom transition-[background-position]  ease-linear`}
               style={{
                 backgroundImage: `url(${work?.img})`,
@@ -108,11 +128,16 @@ const Work = () => {
               }}
             ></div>
             <div className="p-2.5 md:p-4 bg-gradient-to-t  rounded-b-3xl from-zinc-95 via-zinc-950/8 to-transparent">
-              <div className="flex gap-2 items-center my-3">
+              <div className="flex flex-col gap-2 my-3">
                 <RiCodeBoxFill className="text-2xl" />
-                <Link href={work?.github} className="text-sky-300">
-                  Code
+                <Link href={work?.frontend} className="text-sky-300 underline">
+                  Frontend code
                 </Link>
+                {work?.backend && (
+                  <Link href={work?.backend} className="text-sky-300 underline">
+                    Backend code
+                  </Link>
+                )}
               </div>
               <h3 className="sm:text-lg md:text-lg font-sans flex flex-col mt-2 flex-1 lg:text-xl line-clamp-2 ">
                 {work?.name}

@@ -4,19 +4,17 @@ export async function POST(req) {
   try {
     const { email, message } = await req.json();
 
-    // === 1️⃣ Transporter সেটআপ ===
     const transporter = nodemailer.createTransport({
-      service: "gmail", // তুমি চাইলে অন্য SMTP ব্যবহার করতে পারো
+      service: "gmail",
       auth: {
-        user: process.env.EMAIL_USER, // তোমার Gmail address
-        pass: process.env.EMAIL_PASS, // Gmail app password (normal password না!)
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
-    // === 2️⃣ ইমেইল পাঠানো ===
     await transporter.sendMail({
       from: email,
-      to: process.env.EMAIL_USER, // তুমি নিজেই পাবে
+      to: process.env.EMAIL_USER,
       subject: `New Message from Portfolio Contact Form`,
       text: message,
       html: `

@@ -5,14 +5,14 @@ import Orb from "../AnimateComponent/AnimatedCircleOrb";
 import Particles from "../AnimateComponent/AnimatedBgParticle";
 import Navbar from "../shared/Navbar";
 import Link from "next/link";
+import { FaDownload } from "react-icons/fa6";
 
 const Banner = () => {
   return (
     <div id="home" className="md:min-h-screen xxl:min-h-auto! overflow-hidden ">
-      <Navbar />
       <section
-        className="relative  flex flex-col-reverse py-3 xsm:py-4 smm:py-10 lg:flex-row  gap-5 px-3 xsm:px-4 xl:py-10 
-        2xl:py-16 3xl:py-40 sm:px-10 items-center md:py-[74px] overflow-hidden"
+        className="relative  flex flex-col-reverse py-3 xsm:py-4 smm:py-10 lg:flex-row  gap-5 px-3 xsm:px-4 xl:py-14 
+        2xl:py-28 3xl:py-40 sm:px-10 items-center md:py-[74px] overflow-hidden"
       >
         <div className="absolute inset-0 z-10">
           <Particles
@@ -70,13 +70,21 @@ const Banner = () => {
               experiences that make meaning and impact.
             </p>
 
-            <div className=" mt-6! md:mt-4! lg:mt-10!">
+            <div className=" mt-6! md:mt-4! w-max  flex flex-col xsm:flex-row gap-3 lg:mt-10!">
               <Link
                 href={"#contact"}
-                className=" primary-button px-4  py-1.5 sm:py-2.5 sm:px-6 3xl:py-3 3xl:px-8 3xl:text-xl! "
+                className=" primary-button px-4 text-center py-1.5 sm:py-2.5 sm:px-6 3xl:py-3 3xl:px-8 3xl:text-xl! "
               >
                 Here Me..
               </Link>
+              <a
+                href="/img/Tasin_Ahmed_cv.pdf"
+                download
+                className="borderborder-indigo-800 flex bg-white/10 items-center gap-1 px-4 py-1.5 sm:py-2.5 sm:px-6 3xl:py-3 3xl:px-8 3xl:text-xl rounded-lg hover:bg-white/5 hover:text-white transition"
+              >
+                Download CV
+                <FaDownload className="" />
+              </a>
             </div>
           </div>
         </div>
