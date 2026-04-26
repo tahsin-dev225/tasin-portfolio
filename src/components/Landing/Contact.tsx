@@ -31,11 +31,11 @@ export default function Contact() {
     setLoading(false);
 
     if (data.success) {
-      notify("✅ Message sent successfully!");
+      notify("Message sent successfully!");
       setEmail("");
       setMessage("");
     } else {
-      setStatus("❌ Failed to send message.");
+      setStatus("Failed to send message.");
     }
   };
 

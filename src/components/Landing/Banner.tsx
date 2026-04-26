@@ -75,10 +75,10 @@ const Banner = () => {
                 href={"#contact"}
                 className=" primary-button px-4 text-center py-1.5 sm:py-2.5 sm:px-6 3xl:py-3 3xl:px-8 3xl:text-xl! "
               >
-                Here Me..
+                Hire Me!
               </Link>
               <a
-                href="/img/Tasin_Ahmed_cv.pdf"
+                href="/img/Tasin_Ahmed_resume.pdf"
                 download
                 className="borderborder-indigo-800 flex bg-white/10 items-center gap-1 px-4 py-1.5 sm:py-2.5 sm:px-6 3xl:py-3 3xl:px-8 3xl:text-xl rounded-lg hover:bg-white/5 hover:text-white transition"
               >
