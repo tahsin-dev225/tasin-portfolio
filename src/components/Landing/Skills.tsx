@@ -164,9 +164,9 @@ const skills: SkillCategory[] = [
   {
     title: "Backend",
     id: 1,
-    items: ["Node.js", "Express.js", "JWT", "API Design"],
+    items: ["Node.js", "Express.js", "Prisma", "JWT", "API Design"],
   },
-  { title: "Database", id: 2, items: ["MongoDB", "Mongoose", "Aggregation"] },
+  { title: "Database", id: 2, items: ["MongoDB", "Mongoose", "PostgreSQL", "Aggregation"] },
   {
     title: "Tools",
     id: 3,
@@ -315,7 +315,7 @@ const SkillsSection = () => {
           })}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-16 hidden lg:block text-center">
           <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-full border border-blue-500/30 backdrop-blur-sm">
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
             <span className="text-slate-300 text-sm">

@@ -63,7 +63,7 @@ export default function Contact() {
               </div>
               <div className="flex text-[13px] xsm:text-[14px] smm:text-[15px] sm:text-base items-center gap-2 sm:gap-4">
                 <Phone className="w-6 h-6 text-green-600" />
-                <span className="text-gray-300">+880 01331224641</span>
+                <span className="text-gray-300">+88 01331224641</span>
               </div>
               <div className="flex text-[13px] xsm:text-[14px] smm:text-[15px] sm:text-base items-center gap-2 sm:gap-4">
                 <MapPin className="w-6 h-6 text-red-800" />

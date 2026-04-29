@@ -130,11 +130,11 @@ const Work = () => {
             <div className="p-2.5 md:p-4 bg-gradient-to-t  rounded-b-3xl from-zinc-95 via-zinc-950/8 to-transparent">
               <div className="flex flex-col gap-2 my-3">
                 <RiCodeBoxFill className="text-2xl" />
-                <Link href={work?.frontend} className="text-sky-300 underline">
+                <Link href={work?.frontend} className="text-sky-400 underline">
                   Frontend code
                 </Link>
                 {work?.backend && (
-                  <Link href={work?.backend} className="text-sky-300 underline">
+                  <Link href={work?.backend} className="text-sky-400 underline">
                     Backend code
                   </Link>
                 )}
