@@ -84,7 +84,7 @@ export default function AboutMe() {
             className="text-xl md:text-lg text-center lg:text-lg font-semibold"
           />
           <SplitText
-            text={`I am a student of political-science in Bikrampur Adharsa universty, Munshigonj (2024-present)`}
+            text={`I am a student of political-science in Bikrampur Adharsa university, Munshigonj (2024-present)`}
             delay={10}
             duration={0.5}
             ease="power3.out"
