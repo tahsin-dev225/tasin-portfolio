@@ -22,7 +22,7 @@ const works: WorksType[] = [
   {
     name: "Planora - Event Management website.",
     duration: "6000ms",
-    language: ["TypeScript", "next.js","Express", "better-auth", "prisma", "postgresql"],
+    language: ["TypeScript", "next.js", "Express", "better-auth", "prisma", "postgresql"],
     url: "https://planora-frontend-nu.vercel.app/",
     img: "/img/planoraFull.png",
     frontend: "https://github.com/tahsin-dev225/planora-frontend",
@@ -33,13 +33,24 @@ const works: WorksType[] = [
   {
     name: "Shoply - E-commerce website.",
     duration: "6000ms",
-    language: ["next.js","redux", "typeScript","mongose","express"],
+    language: ["next.js", "redux", "typeScript", "mongose", "express"],
     url: "https://shoply-client.vercel.app/",
     img: "/img/shoplyFull.jpg",
     frontend: "https://github.com/sabbir53rahman/Shoply_client",
     backend: "https://github.com/sabbir53rahman/Shoply_server",
     title:
       "A complete secured e-commerce collabrated website. Modern frontend design, scalable server using Express, Well-structured Mongoose schemas and Zod validation. Every route is designed for efficiency, security, and clean data flow.",
+  },
+  {
+    name: "Mosque Management website.",
+    duration: "4000ms",
+    language: ["next.js", "typeScript", "prisma", "postgresql", "express"],
+    url: "https://mosjid-manage-frontend.vercel.app",
+    img: "/img/mosqueweb.png",
+    frontend: "https://github.com/tahsin-dev225/mosjid-manage-frontend",
+    backend: "https://github.com/sabbir53rahman/mosjid_manage_server",
+    title:
+      "It's a mosque management website. Mosques admin can manage their mosque's musullis payment,Mosque info and donation.",
   },
   {
     name: "Learning Management website.",
@@ -52,17 +63,17 @@ const works: WorksType[] = [
     title:
       "It's a learn management website where course are sold.Teacher can uplaod their youtube video link and student can see their needed course.",
   },
-  {
-    name: "Coco-Combat - Random Figma Design.",
-    duration: "9000ms",
-    language: ["React", "next.js", "typeScript"],
-    url: "https://coco-tsx.vercel.app/",
-    img: "/img/coco.jpg",
-    frontend: "https://github.com/tahsin-dev225/coco-tsx",
-    // backend: "https://github.com/tahsin-dev225/coco-backend",
-    title:
-      "I tried to make a pixel perfect and complex web desing. I have chosse a complex FIGMA design and made it. I have applied some gorgios enimation.",
-  },
+  // {
+  //   name: "Coco-Combat - Random Figma Design.",
+  //   duration: "9000ms",
+  //   language: ["React", "next.js", "typeScript"],
+  //   url: "https://coco-tsx.vercel.app/",
+  //   img: "/img/coco.jpg",
+  //   frontend: "https://github.com/tahsin-dev225/coco-tsx",
+  //   // backend: "https://github.com/tahsin-dev225/coco-backend",
+  //   title:
+  //     "I tried to make a pixel perfect and complex web desing. I have chosse a complex FIGMA design and made it. I have applied some gorgios enimation.",
+  // },
 
   // {
   //   name: "Building Management website.",
